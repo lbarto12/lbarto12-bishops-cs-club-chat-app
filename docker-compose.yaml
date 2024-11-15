@@ -1,0 +1,10 @@
+version: "3"
+services:
+  msg_database:
+    image: "postgres:latest"
+    ports:
+      - 5050:5432
+    environment:
+      POSTGRES_USER: msg_user
+      POSTGRES_PASSWORD: msg_password
+      POSTGRES_DB: msg_db
